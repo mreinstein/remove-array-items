@@ -1,5 +1,7 @@
 # remove-array-items
 
+[![Build Status](https://travis-ci.org/mreinstein/remove-array-items.svg?branch=master)](https://travis-ci.org/mreinstein/remove-array-items)
+
 remove items from a javascript array with generating garbage.
 
 Despite there being a number of "remove array items" in npm, I couldn't find satisfying all criteria:
