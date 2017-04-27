@@ -1,6 +1,6 @@
 {
   "name": "remove-array-items",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "remove items from a javascript array without generating memory garbage",
   "main": "index.js",
   "scripts": {
