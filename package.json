@@ -24,6 +24,6 @@
   },
   "homepage": "https://github.com/mreinstein/remove-array-items#readme",
   "devDependencies": {
-    "tap": "^10.3.2"
+    "tap": "^11.1.0"
   }
 }
