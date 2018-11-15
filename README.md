@@ -1,7 +1,5 @@
 # remove-array-items
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/mreinstein/remove-array-items.svg)](https://greenkeeper.io/)
-
 remove items from a javascript array without generating memory garbage.
 
 [![Build Status](https://travis-ci.org/mreinstein/remove-array-items.svg?branch=master)](https://travis-ci.org/mreinstein/remove-array-items)
