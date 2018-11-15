@@ -12,6 +12,7 @@ Despite there being a number of "remove array items" in npm, I couldn't find sat
 * **performs similar or better to the native `array.splice`**
 * has tests
 * es3+ compatible
+* works in both commonjs (node) and es modules (import)
 
 so here we are.
 
@@ -27,10 +28,20 @@ removeItems(arr, startIdx, removeCount)
 ```
 
 
-## usage
+## commonjs usage
 
 ```javascript
 const removeItems = require('remove-array-items')
+
+const arr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ]
+
+removeItems(arr, 3, 4)  // after running, arr === [ 1, 2, 3, 8, 9 ]
+```
+
+## es module usage
+
+```javascript
+import removeItems from 'remove-array-items'
 
 const arr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ]
 
