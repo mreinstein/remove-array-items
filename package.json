@@ -1,6 +1,6 @@
 {
   "name": "remove-array-items",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "remove items from a javascript array without generating memory garbage",
   "main": "dist/remove-array-items.cjs.js",
   "module": "dist/remove-array-items.esm.js",

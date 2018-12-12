@@ -8,8 +8,7 @@
  * @param {number} startIdx The index to begin removing from (inclusive)
  * @param {number} removeCount How many items to remove
  */
-export default function removeItems(arr, startIdx, removeCount)
-{
+export default function removeItems (arr, startIdx, removeCount) {
   var i, length = arr.length
 
   if (startIdx >= length || removeCount === 0) {
