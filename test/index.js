@@ -1,6 +1,6 @@
 'use strict'
 
-var removeItems = require('../dist/remove-array-items.cjs.js')
+var removeItems = require('../index.js')
 var test        = require('tap').test
 
 
