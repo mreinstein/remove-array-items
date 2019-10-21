@@ -11,7 +11,7 @@
 export default function removeItems (arr, startIdx, removeCount) {
   var i, length = arr.length
 
-  if (startIdx >= length || removeCount === 0) {
+  if (startIdx >= length || removeCount <= 0 || Object.isFrozen(arr)) {
     return
   }
 
