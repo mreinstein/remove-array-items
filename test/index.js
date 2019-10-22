@@ -31,3 +31,24 @@ test('should remove other elements if delete count is > than the number of eleme
   t.deepEquals(arr, [ 1, 2, 3, 4, 5, 6, 7 ])
   t.end()
 })
+
+test('should remove no element if count <=0', function (t) {
+    var arr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+    removeItems(arr, 7, -2)
+    t.deepEquals(arr, [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ])
+    t.end()
+})
+
+test('should remove no element if start <=0', function (t) {
+    var arr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+    removeItems(arr, -7, 5)
+    t.deepEquals(arr, [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ])
+    t.end()
+})
+
+test("should remove the remaining elements start with 'start' if count > arr.length", function (t) {
+    var arr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+    removeItems(arr, 4, 100)
+    t.deepEquals(arr, [ 1, 2, 3, 4])
+    t.end()
+})
