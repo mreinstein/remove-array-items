@@ -25,6 +25,8 @@ originally inspired by https://gamealchemist.wordpress.com/2013/05/01/lets-get-t
 removeItems(arr, startIdx, removeCount)
 ```
 
+`startIdx` is an integer `>= 0`, and `removeCount` is an integer `> 0`.
+
 
 ## commonjs usage
 
