@@ -28,21 +28,9 @@ removeItems(arr, startIdx, removeCount)
 `startIdx` is an integer `>= 0`, and `removeCount` is an integer `> 0`.
 
 
-## commonjs usage
+## example usage
 
 ```javascript
-const removeItems = require('remove-array-items')
-
-const arr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ]
-
-removeItems(arr, 3, 4)  // after running, arr === [ 1, 2, 3, 8, 9 ]
-```
-
-## es module usage
-
-```javascript
-import removeItems from 'remove-array-items'
-
 const arr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ]
 
 removeItems(arr, 3, 4)  // after running, arr === [ 1, 2, 3, 8, 9 ]
