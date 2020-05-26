@@ -1,5 +1,3 @@
-'use strict'
-
 /**
  * Remove a range of items from an array
  *
@@ -9,19 +7,17 @@
  * @param {number} removeCount How many items to remove
  */
 export default function removeItems (arr, startIdx, removeCount) {
-  var i, length = arr.length
+    var i, length = arr.length
 
-  if (startIdx >= length || removeCount <= 0 || startIdx < 0) {
-    return
-  }
+    if (startIdx >= length || removeCount <= 0 || startIdx < 0)
+        return
 
-  removeCount = (startIdx + removeCount > length ? length - startIdx : removeCount)
+    removeCount = (startIdx + removeCount > length ? length - startIdx : removeCount)
 
-  var len = length - removeCount
+    var len = length - removeCount
 
-  for (i = startIdx; i < len; ++i) {
-    arr[i] = arr[i + removeCount]
-  }
+    for (i = startIdx; i < len; ++i)
+        arr[i] = arr[i + removeCount]
 
-  arr.length = len
+    arr.length = len
 }
