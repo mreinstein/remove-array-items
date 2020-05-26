@@ -6,8 +6,8 @@
   "module": "dist/remove-array-items.esm.js",
   "scripts": {
     "build": "npm-run-all -p build:*",
-    "build:cjs": "rollup index.js --file dist/remove-array-items.cjs.js --format cjs",
-    "build:esm": "rollup index.js --file dist/remove-array-items.esm.js --format esm",
+    "build:cjs": "rollup src/remove-array-items.js --file dist/remove-array-items.cjs.js --format cjs",
+    "build:esm": "rollup src/remove-array-items.js --file dist/remove-array-items.esm.js --format esm",
     "prepublishOnly": "npm run build",
     "test": "tap ./test"
   },

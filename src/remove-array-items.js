@@ -7,16 +7,16 @@
  * @param {number} removeCount How many items to remove
  */
 export default function removeItems (arr, startIdx, removeCount) {
-    var i, length = arr.length
+    const length = arr.length
 
     if (startIdx >= length || removeCount <= 0 || startIdx < 0)
         return
 
     removeCount = (startIdx + removeCount > length ? length - startIdx : removeCount)
 
-    var len = length - removeCount
+    const len = length - removeCount
 
-    for (i = startIdx; i < len; ++i)
+    for (let i = startIdx; i < len; ++i)
         arr[i] = arr[i + removeCount]
 
     arr.length = len
