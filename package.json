@@ -1,12 +1,12 @@
 {
   "name": "remove-array-items",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "description": "remove items from a javascript array without generating memory garbage",
   "main": "src/remove-array-items.js",
   "type": "module",
   "scripts": {
     "prepublishOnly": "npm test",
-    "test": "tap --no-esm ./test"
+    "test": "tap --no-esm ./test/"
   },
   "repository": {
     "type": "git",
@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/mreinstein/remove-array-items#readme",
   "devDependencies": {
-    "tap": "^15.0.0"
+    "tap": "^14.11.0"
   },
   "engines": {
     "node": ">=12.17"
