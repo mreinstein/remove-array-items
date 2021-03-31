@@ -1,15 +1,12 @@
-sudo: false
-
+os: linux
+dist: xenial
 language: node_js
-
-before_script:
-  - npm run build
 
 node_js:
 - '12'
 - '14'
 
-matrix:
+jobs:
   include:
   - node_js: '14'
     env: BROWSER_NAME=chrome BROWSER_VERSION=latest
