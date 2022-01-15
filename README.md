@@ -2,7 +2,7 @@
 
 remove items from a javascript array without generating memory garbage.
 
-[tests](https://github.com/mreinstein/remove-array-items/actions/workflows/main.yml/badge.svg)
+![tests](https://github.com/mreinstein/remove-array-items/actions/workflows/main.yml/badge.svg)
 
 
 Despite there being a number of "remove array items" in npm, I couldn't find satisfying all criteria:
